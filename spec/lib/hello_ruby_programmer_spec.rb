@@ -6,4 +6,10 @@ describe 'greeting' do
 
     greeting("you")
   end
+
+  it 'accepts default argument `Who`' do
+    expect(STDOUT).to receive(:puts).with("Hi, Who! Welcome to the wonderful world of Ruby programming.")
+
+    greeting
+  end
 end
